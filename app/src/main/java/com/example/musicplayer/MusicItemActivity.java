@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class MusicItemActivity extends AppCompatActivity {
 
@@ -15,9 +16,14 @@ public class MusicItemActivity extends AppCompatActivity {
         setContentView(R.layout.activity_music_item);
         //get the current intent
         Intent intent = getIntent();
-        Bundle extras = intent.getExtras();
-        Integer img = extras.getInt("Image",0);
+        Integer img = intent.getIntExtra("Image",0);
+        String title = intent.getStringExtra("Title");
+        String number = intent.getStringExtra("Number");
         ImageView imageView = findViewById(R.id.music_item_icon_pa);
         imageView.setImageResource(img);
+        TextView textView1 = findViewById(R.id.music_name);
+        textView1.setText(title);
+        TextView textView2 = findViewById(R.id.listen_number);
+        textView2.setText(number);
     }
 }

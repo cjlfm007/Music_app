@@ -18,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
 
     private static final int REQUEST_CODE = 200;
     private int musicImg;
+    private String title;
+    private String num;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,48 +45,13 @@ public class MainActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                // selected item
-                //String selected = ((ImageView) view.findViewById(R.id.music_item_icon));
-
-                //Toast toast = Toast.makeText(getApplicationContext(), selected, Toast.LENGTH_SHORT);
-                //String text = listView.get(position).tostring().trim();//first method
-                //final String text = ((TextView)view).getText();
-
-                //musicImg = listView.getmusicAdapter.getItem(position).image();
-                //Log.d("image","" + musicImg);
-                //Music playingMusic = musicAdapter.getItem(position);
-                //Toast toast = Toast.makeText(getApplicationContext(), selected, Toast.LENGTH_SHORT);
-                //                toast.show();
-                //TextView nameTextView = musicList.findViewById(R.id.music_name);
-                //nameTextView.setText(playingMusic.getSongTitle());
-                //TextView numberTextView = musicList.findViewById(R.id.listen_number);
-                //numberTextView.setText(playingMusic.getNumOfListens());
-                //ImageView iconView = musicList.findViewById(R.id.music_item_icon);
-                //TextView textview = (TextView)row.findViewById(R.id.tvTop);
-                ImageView imageview = (ImageView) view.findViewById(R.id.music_item_icon);
-                //String product = textview.getText().toString();
-                musicImg = imageview.getId();
-
+                Music playingMusic = musicAdapter.getItem(position);
+                Intent test = new Intent(getApplicationContext(),MusicItemActivity.class);
+                test.putExtra("Image", playingMusic.getmImageResourceId());
+                test.putExtra("Title", playingMusic.getSongTitle());
+                test.putExtra("Number", playingMusic.getNumOfListens());
+                startActivity(test);
             }
         });
-    }
-
-    public void openMusicItem(View view){
-        Intent i  = new Intent(this, MusicItemActivity.class);
-
-        Bundle extras = new Bundle();
-        extras.putInt("Image",musicImg);
-       // extras.putInt("USER_ID", 21);
-        //extras.putIntArray("USER_SELCTIONS", [1, 2, 3, 4, 5]);
-
-        //Intent intent = new Intent(this, NextActivity.class);
-        i.putExtras(extras);
-
-        //i.putExtra("Value1", musicImg);
-        //i.putExtra("Value2", "This value two ActivityTwo");
-        // set the request code to any code you like,
-        // you can identify the callback via this code
-        startActivity(i);
     }
 }
