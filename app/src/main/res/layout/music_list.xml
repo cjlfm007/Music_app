@@ -5,19 +5,20 @@
     android:gravity="center_vertical"
     android:orientation="horizontal"
     android:minHeight="?android:attr/listPreferredItemHeight"
-    android:padding="16dp">
+    android:padding="@dimen/activity_margin">
 
     <ImageView
         android:id="@+id/music_item_icon"
-        android:layout_width="50dp"
-        android:layout_height="50dp"/>
+        android:layout_width="@dimen/image_detail_width"
+        android:layout_height="@dimen/image_detail_height"
+        />
 
     <LinearLayout
-        android:layout_width="0dp"
+        android:layout_width="@dimen/list_layout_width"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:layout_weight="@dimen/list_layout_weight"
         android:orientation="vertical"
-        android:paddingLeft="16dp">
+        android:paddingLeft="@dimen/activity_margin">
 
         <TextView
             android:id="@+id/music_name"
