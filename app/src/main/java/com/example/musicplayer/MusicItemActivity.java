@@ -14,7 +14,6 @@ public class MusicItemActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_music_item);
-        //get the current intent
         Intent intent = getIntent();
         Integer img = intent.getIntExtra("Image",0);
         String title = intent.getStringExtra("Title");

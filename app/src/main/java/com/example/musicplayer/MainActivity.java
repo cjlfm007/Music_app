@@ -4,22 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.AdapterView;
-import android.widget.ImageView;
 import android.widget.ListView;
 import android.view.View;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-
-    private static final int REQUEST_CODE = 200;
-    private int musicImg;
-    private String title;
-    private String num;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         musicList.add(new Music("RongHao", "129 Clicks", R.drawable.lironghao));
 
         final MusicListAdapter musicAdapter = new MusicListAdapter(this, musicList);
-        final ListView listView = findViewById(R.id.music_list_view);
+        ListView listView = findViewById(R.id.music_list_view);
         listView.setAdapter(musicAdapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
