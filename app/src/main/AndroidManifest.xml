@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MusicItemActivity"
-            android:label="MusicDetailPage">
+            android:label="PlayingMusic">
         </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
