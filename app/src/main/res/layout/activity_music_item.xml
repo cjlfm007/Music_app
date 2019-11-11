@@ -9,6 +9,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:src="@drawable/bg"
         android:scaleType="centerCrop" />
 
     <LinearLayout
@@ -102,14 +103,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="4"
-                android:progressTint="#fff"
-                android:thumbTint="#c4ff0e" />
+                android:progressTint="#2196F3"
+                android:thumbTint="#070C01" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="- 2.33"
+                android:text="- 5.43"
                 android:textColor="#ffffff"
                 android:textSize="14sp" />
 
