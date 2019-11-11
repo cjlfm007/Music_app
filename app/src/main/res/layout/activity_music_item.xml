@@ -9,7 +9,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/bg"
+        android:src="@drawable/play_page_bg"
         android:scaleType="centerCrop" />
 
     <LinearLayout
@@ -47,7 +47,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:textColor="#000000"
+            android:textColor="@color/songTitleColor"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -57,7 +57,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="3dp"
             android:gravity="center"
-            android:textColor="#000000"
+            android:textColor="@color/songListenColor"
             android:textSize="14sp" />
 
         <LinearLayout
@@ -74,19 +74,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:src="@drawable/previous" />
+                android:src="@drawable/previous_btn" />
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/play" />
+                android:src="@drawable/play_btn" />
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
-                android:src="@drawable/next" />
+                android:src="@drawable/next_btn" />
 
         </LinearLayout>
 
@@ -103,15 +103,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="4"
-                android:progressTint="#2196F3"
-                android:thumbTint="#070C01" />
+                android:progressTint="@color/progressBar"
+                android:thumbTint="@color/progressBtn" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="- 5.43"
-                android:textColor="#ffffff"
+                android:textColor="@color/songLengthColor"
                 android:textSize="14sp" />
 
         </LinearLayout>
@@ -126,13 +126,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/repeat" />
+                android:src="@drawable/random_btn" />
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:src="@drawable/replay" />
+                android:src="@drawable/replay_btn" />
 
         </LinearLayout>
 
