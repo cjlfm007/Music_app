@@ -7,5 +7,18 @@
     <dimen name="image_detail_height">50dp</dimen>
     <dimen name="list_layout_width">0dp</dimen>
     <dimen name="list_layout_weight">1</dimen>
-    <dimen name="music_image_margin_top">200dp</dimen>
+    <dimen name="song_title_margin_top">10dp</dimen>
+    <dimen name="song_title_text_size">24sp</dimen>
+    <dimen name="listen_number_margin_top">3dp</dimen>
+    <dimen name="listen_number_text_size">14sp</dimen>
+    <dimen name="card_padding_bottom">30dp</dimen>
+    <dimen name="card_layout_width">220dp</dimen>
+    <dimen name="card_layout_height">220dp</dimen>
+    <dimen name="card_corner_radius">110dp</dimen>
+    <dimen name="play_padding_start">30dp</dimen>
+    <dimen name="play_padding_end">30dp</dimen>
+    <dimen name="progress_bar_margin_top">16dp</dimen>
+    <dimen name="progress_bar_margin_left">40dp</dimen>
+    <dimen name="song_length_text_size">14sp</dimen>
+    <dimen name="bottom_btn_margin_top">16dp</dimen>
 </resources>

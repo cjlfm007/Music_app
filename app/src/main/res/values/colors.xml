@@ -8,4 +8,5 @@
     <color name="progressBtn">#070C01</color>
     <color name="progressBar">#2196F3</color>
     <color name="songLengthColor">#ffffff</color>
+    <color name="songCardBGColor">#40ffffff</color>
 </resources>

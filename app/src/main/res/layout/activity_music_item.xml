@@ -15,21 +15,21 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#40ffffff"
+        android:background="@color/songCardBGColor"
         android:gravity="center_horizontal|bottom"
         android:orientation="vertical"
-        android:paddingBottom="30dp">
+        android:paddingBottom="@dimen/card_padding_bottom">
 
         <androidx.cardview.widget.CardView
-            android:layout_width="220dp"
-            android:layout_height="220dp"
-            app:cardCornerRadius="110dp">
+            android:layout_width="@dimen/card_layout_width"
+            android:layout_height="@dimen/card_layout_height"
+            app:cardCornerRadius="@dimen/card_corner_radius">
 
             <androidx.cardview.widget.CardView
-                android:layout_width="210dp"
-                android:layout_height="210dp"
+                android:layout_width="@dimen/card_layout_width"
+                android:layout_height="@dimen/card_layout_height"
                 android:layout_gravity="center"
-                app:cardCornerRadius="105dp">
+                app:cardCornerRadius="@dimen/card_corner_radius">
 
                 <ImageView
                     android:id="@+id/music_item_icon_pa"
@@ -45,20 +45,20 @@
             android:id="@+id/music_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/song_title_margin_top"
             android:gravity="center"
             android:textColor="@color/songTitleColor"
-            android:textSize="24sp"
+            android:textSize="@dimen/song_title_text_size"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/listen_number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="3dp"
+            android:layout_marginTop="@dimen/listen_number_margin_top"
             android:gravity="center"
             android:textColor="@color/songListenColor"
-            android:textSize="14sp" />
+            android:textSize="@dimen/listen_number_text_size" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -66,8 +66,10 @@
             android:layout_marginTop="16dp"
             android:gravity="center"
             android:orientation="horizontal"
-            android:paddingStart="30dp"
-            android:paddingEnd="30dp"
+            android:paddingStart="@dimen/play_padding_start"
+            android:paddingEnd="@dimen/play_padding_end"
+            android:paddingLeft="@dimen/play_padding_start"
+            android:paddingRight="@dimen/play_padding_end"
             android:weightSum="5">
 
             <ImageView
@@ -93,9 +95,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginStart="@dimen/progress_bar_margin_left"
+            android:layout_marginLeft="@dimen/progress_bar_margin_left"
+            android:layout_marginTop="@dimen/progress_bar_margin_top"
             android:orientation="horizontal"
             android:weightSum="5">
 
@@ -110,16 +112,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="- 5.43"
+                android:text="@string/static_progress"
                 android:textColor="@color/songLengthColor"
-                android:textSize="14sp" />
+                android:textSize="@dimen/song_length_text_size" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="@dimen/bottom_btn_margin_top"
             android:orientation="horizontal">
 
             <ImageView
